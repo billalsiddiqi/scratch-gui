@@ -75,6 +75,25 @@ export default [
     {
         name: (
             <FormattedMessage
+                defaultMessage="Say Hello World"
+                description="Say To Th"
+                id="gui.extension.custom.name"
+            />
+        ),
+        iconURL: customImage,
+        insetIconURL: customInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="For developers"
+                description="Description for the custom extension selector"
+                id="gui.extension.custom.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
                 defaultMessage="Music"
                 description="Name for the 'Music' extension"
                 id="gui.extension.music.name"
