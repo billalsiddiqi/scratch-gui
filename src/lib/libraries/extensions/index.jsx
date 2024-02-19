@@ -53,44 +53,30 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Choose an extension"
-                description="Name for the custom extension selector"
-                id="gui.extension.custom.name"
-            />
-        ),
-        iconURL: customImage,
-        insetIconURL: customInsetImage,
-        description: (
-            <FormattedMessage
-                defaultMessage="For developers"
-                description="Description for the custom extension selector"
-                id="gui.extension.custom.description"
-            />
-        ),
-        featured: true
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Say Hello World"
-                description="Say To Th"
-                id="gui.extension.custom.name"
-            />
-        ),
-        iconURL: customImage,
-        insetIconURL: customInsetImage,
-        description: (
-            <FormattedMessage
-                defaultMessage="For developers"
-                description="Description for the custom extension selector"
-                id="gui.extension.custom.description"
-            />
-        ),
-        featured: true
-    },
+    
+       {
+            "id": "Hello",
+            "name": "Hello",
+            color1: '#000000',
+            color2: '#fc0303',
+            "blocks": [
+                   {
+                        "opcode": "sayHelloWorld",
+                        "blockType": "reporter",
+                        "text": "Say [hello] to the [world]",
+                        "arguments": {
+                            "hello": {
+                                "type": "string",
+                                "defaultValue": "Hello"
+                            },
+                            "world": {
+                                "type": "string",
+                                "defaultValue": "World"
+                            },
+                        }
+                    },
+                ],
+        },
     {
         name: (
             <FormattedMessage
